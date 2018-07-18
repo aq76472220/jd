@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "产品详情",
+  "usingComponents": {
+    "model": "/components/model/model"
+  }
+}

@@ -1,0 +1,46 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class='ss-personalCenter-banner relative'>
+    <view class='absolute con'>
+      <view class='img'>
+        <image src='../../assets/tximg.png'></image>
+      </view>
+      <text class='fs15  block center'>135****1314</text>
+    </view> 
+    <image class='banner-bg' src='../../assets/personalCenterbannerbg.png'></image>
+</view>
+
+<!-- 列表 --> 
+<view class='ss-entry-list-box relative b-line'> 
+  <view class='ss-entry-list-item ml10 relative b-line ss-rarrow'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/personalCenter-icon01.png'></image>      
+      </view> 
+      <text class='fs15 onec font'>我的借款</text> 
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line ss-rarrow'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/personalCenter-icon02.png'></image>      
+      </view> 
+      <text class='fs15 onec font'>我的收藏</text> 
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line ss-rarrow'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/personalCenter-icon03.png'></image>      
+      </view> 
+      <text class='fs15 onec font'>账户安全</text> 
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line ss-rarrow'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/personalCenter-icon04.png'></image>      
+      </view> 
+      <text class='fs15 onec font'>关于华仓</text> 
+  </view> 
+</view>
+
+  <!-- 按钮 -->
+  <view class='mt30 mb30 ml10 mr10'>
+    <button  type='primary'>退出</button>
+  </view>

@@ -1,0 +1,116 @@
+<!--pages/applyLoan/applyLoan.wxml-->
+<import src="../../tpl/resourceList/resourceList.wxml"/>
+<!-- 列表 --> 
+<view> 
+    <template is='resourceList' />   
+</view>
+
+<view class='relative t-line pl10 pt10 pr10 pb10'>
+  <!-- 申请条件 -->
+  <view class='ss-apply-tit'>
+    <text class='fs14 bold'>申请条件</text>
+  </view>
+
+  <view class='ss-apply-font-con'>
+    <text class='block fs14 onec'>1.年龄要求：不限申请人年龄需在22（含）-60（含）周岁之间，否则将无法成功借款</text>
+    <text class='block fs14 onec'>2.申请材料：身份证、房产证明、担保人信息、车辆征信</text>
+    <text class='block fs14 onec'>3.身份要求：不限</text>
+    <text class='block fs14 onec'>4.资质要求：不限</text>
+  </view>
+
+  <!-- 办理流程 -->
+  <view class='ss-apply-tit'>
+    <text class='fs14 bold'>办理流程</text>
+  </view>
+
+  <view class='ss-flex ss-apply-bottom mt10   mb50'>
+      <view class='ss-flex-item ss-apply-bottom-item center'>
+          <view>
+            <view class='img relative'>
+              <image src='../../assets/apply-bicon01.png'></image>
+              <!-- 线 -->
+              <view class='ss-applay-line ss-flex absolute'>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+              </view>
+              <!-- 线 -->
+            </view>
+            <text class='fs14 onec pt5 block'>提交申请</text>
+          </view> 
+      </view>
+
+      <view class='ss-flex-item ss-apply-bottom-item center'>
+          <view>
+            <view class='img relative'>
+              <image src='../../assets/apply-bicon02.png'></image>
+              <!-- 线 -->
+              <view class='ss-applay-line ss-flex absolute'>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+              </view>
+              <!-- 线 -->
+            </view>
+            <text class='fs14 onec pt5 block'>门店办理</text>
+          </view> 
+      </view> 
+
+      <view class='ss-flex-item ss-apply-bottom-item center'>
+          <view>
+            <view class='img relative'>
+              <image src='../../assets/apply-bicon03.png'></image>
+              <!-- 线 -->
+              <view class='ss-applay-line ss-flex absolute'>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+              </view>
+              <!-- 线 -->
+            </view>
+            <text class='fs14 onec pt5 block'>资料审批</text>
+          </view> 
+      </view> 
+
+      <view class='ss-flex-item ss-apply-bottom-item center'>
+          <view>
+            <view class='img relative'>
+              <image src='../../assets/apply-bicon04.png'></image>
+              <!-- 线 -->
+              <view class='ss-applay-line ss-flex absolute'>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+                <view class='ss-applay-line-item ss-flex-item'></view>
+              </view>
+              <!-- 线 -->
+            </view>
+            <text class='fs14 onec pt5 block'>面签放款</text>
+          </view> 
+      </view> 
+  </view>
+
+</view>
+
+
+  <!-- 按钮 -->
+  <!-- <view class='mt20 mb30 ml10 mr10'>
+    <button  type='primary'>申请借款</button>
+  </view> -->
+
+<!-- 底部按钮 -->
+
+<view class='ss-row pl10  ss-botom-btngroup-box t-line'>
+  <view class=' mr10'>
+  <view  class='ss-col-2'>
+    <view class="ss-scimg {{isCollection? 'active':''}}" bindtap='collectionHandle'></view>
+  </view>
+  <view class='ss-row ss-col-10 ss-botom-btngroup'>
+    <view class='ss-col-6'>申请合作</view>
+    <view class='ss-col-6'>申请借款</view>
+  </view>
+  </view>
+</view>
+
+<!-- 模态框 -->
+<view>
+  <model isShowModel='{{isShowModel}}' ModelId='0' ModelTitle='登录' bindIsShowHandle='bindGetUserInfo'>
+    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+     <view class='center'>您还没有登陆，请登陆后操作！</view>  
+  </model>
+</view>

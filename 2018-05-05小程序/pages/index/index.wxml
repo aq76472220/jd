@@ -1,0 +1,95 @@
+<!--pages/index/index.wxml-->
+<import src="../../tpl/resourceList/resourceList.wxml"/>
+
+<!-- banner -->
+<swiper class='ss-banner' indicator-dots='true' autoplay='true' interval='5000' duration='1000' indicator-active-color='#c31f23'  indicator-color='#ffffff'>
+  <block wx:for='{{imgUrls}}'  wx:for-index='idx' wx:key='idx'>
+    <swiper-item class='ss-banner-item'>
+      <image src='{{item}}' class='slide-image' />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 导航 -->
+<view class='ss-index-nav ss-flex'>
+  <view class='ss-index-nav-item center ss-flex-item'>
+    <image src='../../assets/ss-index-nav01.png'></image>
+    <text class='fs14 onec'>信用贷</text>
+  </view>
+
+  <view class='ss-index-nav-item center ss-flex-item'>
+    <image src='../../assets/ss-index-nav02.png'></image>
+    <text class='fs14 onec'>房贷</text>
+  </view>
+
+  <view class='ss-index-nav-item center ss-flex-item'>
+    <image src='../../assets/ss-index-nav03.png'></image>
+    <text class='fs14 onec'>车贷</text>
+  </view>
+
+  <view class='ss-index-nav-item center ss-flex-item'>
+    <image src='../../assets/ss-index-nav04.png'></image>
+    <text class='fs14 onec'>企业贷</text>
+  </view>
+</view>
+
+<!-- 公告 -->
+<view class='swiper-adv-box relative'>
+  <view class='swiper-adv-licon absolute verticalMiddle l10'>
+    <image src='../../assets/index-tj.png'></image>
+  </view>
+  <swiper class="swiper-adv mt10" vertical="true" autoplay="true" circular="true" interval="4000">
+    <block wx:for="{{msgList}}" wx:for-index='idx' wx:key='idx'>
+      <navigator url="" open-type="navigate">
+        <swiper-item class='swiper-adv-item'>
+          <view class=" fs14 onec ellipsis">{{item.title}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper> 
+  <text class='absolute verticalMiddle r10 fs14 threec  swiper-adv-font'>更多</text>
+</view>
+
+<!-- 新品推荐 -->
+<view class='ss-index-tit center mt10 relative b-line'>
+  <text class='fs15 onec bold'>新品推荐</text>
+</view> 
+<!-- 列表 --> 
+<view> 
+    <template is='resourceList' data='{{...newRecommend}}' />   
+</view>
+
+<!-- 渠道合作/商务合作 -->
+<view class='ss-qdsw-box ss-flex mt10'>
+  <view class='ss-flex-item center'>
+    <image src='../../assets/ss-swhz01.png'></image>
+    <text class='block'>渠道合作</text>
+  </view>
+
+  <view class='ss-flex-item center'>
+    <image src='../../assets/ss-swhz02.png'></image>
+    <text class='block'>渠道合作</text>
+  </view>
+</view>
+
+<!-- 合作伙伴 -->
+<view class='ss-index-tit center mt10 relative b-line'>
+  <text class='fs15 onec bold'>合作伙伴</text>
+</view>
+<!-- 合作伙伴 -->
+<view class='mb10 ss-index-bot relative pr50'>
+  <text class='absolute verticalMiddle r10 fs14 threec  swiper-adv-font'>更多</text>
+  <view class='ss-flex '>
+     <view class='ss-flex-item'>
+        <image src='../../assets/logo01.png'></image>
+     </view>
+
+     <view class='ss-flex-item'>
+        <image src='../../assets/logo02.png'></image>
+     </view>
+
+     <view class='ss-flex-item'>
+        <image src='../../assets/logo03.png'></image>
+     </view>
+  </view>
+</view>

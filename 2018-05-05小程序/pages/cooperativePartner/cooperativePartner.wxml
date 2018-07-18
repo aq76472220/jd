@@ -1,0 +1,17 @@
+<!--pages/cooperativePartner/cooperativePartner.wxml--> 
+<view class='ss-cooperativePartner-box relative b-line'>
+  <block wx:for="{{cooperativeList}}" wx:for-index="idx" wx:key="idx">
+    <view class='ss-cooperativePartner-item  '>
+        <view class=' ss-cooperativePartner-item-con relative b-line '>
+          <view class='img fl mr15'>
+            <image src='../../assets/img02.png'></image>
+          </view>
+
+          <view class='con'>
+            <text class='tit fs14 onec block pb5'>北京爱钱帮财富科技有限公司</text>
+            <text class='fs12 threec block'>阳光透明互联网金融平台</text>
+          </view>
+        </view>
+    </view>
+  </block>
+</view>

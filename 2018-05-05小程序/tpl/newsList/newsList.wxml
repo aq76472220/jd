@@ -1,0 +1,16 @@
+ 
+
+<template name="newsList">
+    <view class='ss-news-item'>
+      <view class='clearfix ss-news-item-con relative b-line'>
+          <view class='img fl mr10'>
+            <image src='../../assets/img01.png'></image>
+          </view> 
+          <view class='con'>
+            <text class='block ellipsis fs14 onec'>你是如何一步步毁掉自己的征信的？</text>
+            <text class='fs12 threec tline-font'>征信是依法收集、整理、保存、加工自然人、法人及其他组织的信用信息，并对外提供信用</text>
+            <view class='clearfix'><text class='fr fs12 threec'>2018-04-10</text></view>
+          </view>
+        </view>
+    </view>
+</template>  

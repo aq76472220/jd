@@ -1,0 +1,3 @@
+/* pages/aboutUs/aboutUs.wxss */
+.aboutUs-logo{margin: 20px 0;}
+.aboutUs-logo image{display: block; width: 120px; height: 120px; margin: 0 auto;}

@@ -1,0 +1,3 @@
+/* pages/applyCooperation/applyCooperation.wxss */
+@import "../../tpl/resourceList/resourceList.wxss"; 
+page{background:#fff}

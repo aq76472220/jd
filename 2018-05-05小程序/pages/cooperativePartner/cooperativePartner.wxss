@@ -1,0 +1,7 @@
+/* pages/cooperativePartner/cooperativePartner.wxss */
+.ss-cooperativePartner-item {padding:0 10px; background: #fff;}
+.ss-cooperativePartner-item-con{padding: 10px 0;overflow: hidden}
+.ss-cooperativePartner-item:last-child .ss-cooperativePartner-item-con::after{display: none;}
+.ss-cooperativePartner-item .img{width: 100px; height: 60px; border: 1px solid #c9c9c9}
+.ss-cooperativePartner-item .img image {display: block;width: 100px; height: 60px;}
+.ss-cooperativePartner-item .con{padding: 7px 0}

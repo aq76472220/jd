@@ -1,0 +1,21 @@
+<!--pages/newsDetails/newsDetails.wxml-->
+<view class='ss-news-details-box'>
+    <text class='tit block'>你是如何一步步毁掉自己的征信的？</text>
+
+    <view class='pb10'>
+      <text class='fs12 onec'>2018-04-12<text class='bluec pl20'>华仓监管</text></text>
+    </view>
+
+    <text class='font'>人征信作为我们的经济身份证，除了能客观证明我们的个人信誉度之外，还能通过良好的信用享用社会资源和经济支持。然后，你的一些细微的动作，可能在一步步毁了自己的征信，从此你的人生只有黑白！</text>
+
+    <text class='font'>人征信作为我们的经济身份证，除了能客观证明我们的个人信誉度之外，还能通过良好的信用享用社会资源和经济支持。然后，你的一些细微的动作，可能在一步步毁了自己的征信，从此你的人生只有黑白！</text>
+
+    <view class='fs14 threec clearfix mt10'>
+        <text class='fl'>阅读100</text>
+        <text class="fl ml20 pl20 ss-news-dz {{isThumbs ? 'active' : ''}}" bindtap='thumbsUphandle'>
+          <text wx:if='{{!isThumbs}}'>点赞</text>
+          <text wx:else>已点赞</text>
+        </text>
+        <text class='fr'>投诉</text>
+    </view>
+</view>

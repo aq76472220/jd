@@ -1,0 +1,12 @@
+<!--pages/submission/submission.wxml-->
+
+  <view class='center mt30   pb30'>
+    <text class='fs18 bold block pt30 mt30 pb10'>信息已提交!</text>
+    <text class=' block fs14 threec pt10'>详情可在“我的借款”中查询订单状态</text>
+  </view>
+
+  <!-- 按钮 -->
+  <view class='pt30 mt30 mb30 ml10 mr10'>
+    <button  type='primary'>返回产品中心</button>
+  </view>
+

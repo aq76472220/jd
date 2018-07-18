@@ -1,0 +1,92 @@
+<!--pages/cooperation/cooperation.wxml-->
+
+<!-- banner -->
+<view class='ss-cooperation-banner'>
+  <image src='../../assets/ss-cooperation-banner.png'></image>
+</view>
+
+<view>
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon01.png'></image>
+        </view>
+
+        <view class='inp'>
+          <input type="text" placeholder="请输入您的姓名"/>
+        </view>
+    </view>
+
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon02.png'></image>
+        </view>
+
+        <view class='inp'>
+          <input type="number" placeholder="请输入您的手机号码" maxlength="11"/>
+        </view>
+    </view>
+
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon03.png'></image>
+        </view>
+
+        <view class='inp relative'>
+          <input type="number" placeholder="请输入验证码" maxlength="6"/>
+          <view class='absolute  fs14 redc ss-yzm-btn' wx:if="{{!isShow}}"  bindtap='getCode'>获取验证码</view>
+          <view class='absolute  fs14 threec ss-yzm-btn' wx:if="{{isShow}}">{{sec}}秒后重新发送</view> 
+        </view>
+    </view>
+
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon04.png'></image>
+        </view>
+
+        <view class='inp'>
+          <input type="text" placeholder="请输入公司名称"/>
+        </view>
+    </view>
+
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon05.png'></image>
+        </view>
+
+        <view class='inp'> 
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}"  >
+                <text class='fs14 threec' wx:if='{{region.length==0}}'>请选择您本人所在地区</text>
+                <text class='fs14 onec'wx:else>{{region[0]}}/{{region[1]}}/{{region[2]}}</text> 
+            </picker>
+        </view>
+    </view>
+
+    <view class='ss-cooperation-inp-item'>
+        <view class='img fl mr10'>
+          <image src='../../assets/cooperation-icon06.png'></image>
+        </view>
+
+        <view class='inp'>
+          <input type="text" placeholder="请输入您的邮箱"/>
+        </view>
+    </view>
+
+    <view class='ss-cooperation-texta-item'> 
+        <view class='texta'>
+          <textarea placeholder="合作优势（100字以内）"  maxlength='100'  />
+        </view>
+    </view>
+</view>
+
+<view class='pl10 pr10 pt10'>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="ss-checkbox">
+        <checkbox color="#c31f23" value="" checked="checked"/><text class='fs12 threec'>已阅读并同意<text class='fs12 redc'>《华仓监管服务协议》</text></text>
+      </label>
+    </checkbox-group>
+</view>
+
+ <!-- 按钮 -->
+  <view class='mt30 mb30 ml10 mr10'>
+    <button  type='primary'>提交</button>
+  </view>

@@ -1,0 +1,48 @@
+<!--pages/asccountSafe/asccountSafe.wxml-->
+<view class='ss-entry-list-box relative b-line t-line'> 
+  
+  <view class='ss-entry-list-item ml10 relative b-line pr10'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/cooperation-icon07.png'></image>      
+      </view> 
+      
+      <view class='pt12 mr20'>
+        <input type="{{isSee01 ? 'text' : 'password'}}" class='fs14 onec' placeholder='请输入原始登录密码'></input> 
+      </view>
+
+      <view class="see-btn  absolute verticalMiddle {{isSee01 ? 'active' : '' }}" bindtap='seeHandle01'></view>
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line pr10'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/cooperation-icon07.png'></image>      
+      </view> 
+      
+      <view class='pt12 mr20'>
+        <input type="{{isSee02 ? 'text' : 'password'}}"  class='fs14 onec' placeholder='请输入新登录密码'></input> 
+      </view>
+
+      <view class="see-btn  absolute verticalMiddle {{isSee02 ? 'active' : '' }}" bindtap='seeHandle02'></view>
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line pr10'> 
+      <view class='img fl mr10'>
+        <image src='../../assets/cooperation-icon07.png'></image>      
+      </view> 
+      
+      <view class='pt12 mr20'>
+        <input type="{{isSee03 ? 'text' : 'password'}}"  class='fs14 onec' placeholder='请再次输入新登录密码'></input> 
+      </view>
+
+      <view class="see-btn  absolute verticalMiddle {{isSee03 ? 'active' : '' }}" bindtap='seeHandle03'></view>
+  </view> 
+</view>
+
+ 
+
+  <!-- 按钮 -->
+  <view class='mt30 mb10 ml10 mr10'>
+    <button  type='primary'>确认</button>
+  </view>
+
+ 

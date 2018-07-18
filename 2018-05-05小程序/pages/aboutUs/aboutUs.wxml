@@ -1,0 +1,31 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<!-- 列表 --> 
+
+<view class='aboutUs-logo'>
+  <image src='../../assets/aboutUs-logo.png'></image>
+</view>
+
+<view class='ss-entry-list-box relative b-line t-line'> 
+  <view class='ss-entry-list-item ml10 relative b-line clearfix'>  
+      <text class='fs15 onec font fl'>微信公众号</text>
+      <text class='fs15 threec font fr pr10'>华仓监管</text>
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line clearfix'>  
+      <text class='fs15 onec font fl'>客服电话</text>
+      <text class='fs15 threec font fr pr10'>010-123455678</text>
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line clearfix'>  
+      <text class='fs15 onec font fl'>版本更新</text>
+      <text class='fs15 threec font fr pr10'>当前为最新版本</text>
+  </view>
+
+  <view class='ss-entry-list-item ml10 relative b-line clearfix ss-rarrow'>  
+      <text class='fs15 onec font fl'>意见反馈</text> 
+  </view> 
+</view>
+
+<view class='clearfix'>
+  <text class='fr pr10 pt10 threec fs14'>客服工作时间 9:30-17:30</text>
+</view>

@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/collection/collection",
+    "pages/applyLoan/applyLoan",
+    "pages/classificationProduct/classificationProduct",
+    "pages/personalCenter/personalCenter",
+    "pages/cooperation/cooperation",
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    "pages/index/index",  
+    "pages/aboutUs/aboutUs",  
+    "pages/submission/submission",
+    "pages/newsIndex/newsIndex",
+    "pages/newsDetails/newsDetails",
+    "pages/signPassword/signPassword",
+    "pages/signPhone/signPhone",
+    "pages/register/register",
+    "pages/asccountSafe/asccountSafe",
+    "pages/myLoan/myLoan",
+    "pages/cooperativePartner/cooperativePartner",
+    
+    "pages/applyCooperation/applyCooperation" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c31f23",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#818181",
+    "selectedColor": "#e44a37",
+    "borderStyle": "#b7b7b7",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "assets/index_s.png",
+        "iconPath": "assets/index_c.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/product_s.png",
+        "iconPath": "assets/product_c.png",
+        "pagePath": "pages/classificationProduct/classificationProduct",
+        "text": "产品"
+      },
+      {
+        "selectedIconPath": "assets/news_s.png",
+        "iconPath": "assets/news_c.png",
+        "pagePath": "pages/newsIndex/newsIndex",
+        "text": "新闻"
+      },
+      {
+        "selectedIconPath": "assets/personalCenter_s.png",
+        "iconPath": "assets/personalCenter_c.png",
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

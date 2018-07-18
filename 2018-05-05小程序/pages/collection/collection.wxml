@@ -1,0 +1,131 @@
+<import src="../../tpl/resourceList/resourceList.wxml"/>
+ 
+<!-- tab -->
+<view class='scroll-box'>
+<view class='ss-nav relative  scroll-box-list'>
+  <block  wx:for="{{navdata}}" wx:for-index="idx" wx:key="idx">
+    <view  class="info-love center ss-nav-item ss-flex-item {{currentTab==idx ? 'on' : ''}}" data-current="{{idx}}"  bindtap="swichNav">
+      <text class='fs14'>{{item.name}}</text>
+    </view>
+  </block>
+</view>
+</view>
+
+
+<view class=''> 
+    <!-- 01全部列表 --> 
+    <view class="{{currentTab==0 ? '' : 'hidden'}}">
+      <view wx:if='{{pageList01.length>0}}'>
+          <block wx:for='{{pageList01}}'  wx:key='index'>
+              <view class='item'>
+              
+                <view class='relative txt' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}"  >
+                  <template is='resourceList' data='{{...item}}' />
+                  
+                </view> 
+
+                <view data-index="{{index}}" bindtap = "delItem" class="inner del">
+                  <text>删除</text> 
+                </view>
+
+              </view>
+          </block> 
+      </view>
+      <!-- 空的显示内容 -->
+      <view class='center ss-kong' wx:else> 
+          <image src='../../assets/classKong.png'></image>
+          <text class='fs14 threec block'>赶紧去收藏吧!</text>
+      </view>
+    </view>
+ 
+
+    <!-- 02信用贷表 -->
+    <view class="{{currentTab==1 ? '' : 'hidden'}}">
+      <view wx:if='{{pageList02.length>0}}'>
+        <block wx:for='{{pageList02}}'  wx:key='index'>
+            <view class='item'>
+              <view class='relative txt' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}"  >
+                <template is='resourceList' data='{{...item}}' />
+                
+              </view>  
+              <view data-index="{{index}}" bindtap = "delItem" class="inner del">
+                <text>删除</text> 
+              </view>
+            </view>
+        </block> 
+    </view>
+    <!-- 空的显示内容 -->
+    <view class='center ss-kong' wx:else> 
+        <image src='../../assets/classKong.png'></image>
+        <text class='fs14 threec block'>赶紧去收藏吧!~</text>
+    </view>
+    </view>
+
+    <!-- 03房贷列表 -->
+    <view class="{{currentTab==2 ? '' : 'hidden'}}">
+      <view wx:if='{{pageList03.length>0}}'>
+          <block wx:for='{{pageList03}}'  wx:key='index'>
+              <view class='item'>
+                <view class='relative txt' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}"  >
+                  <template is='resourceList' data='{{...item}}' />
+                  
+                </view>  
+                <view data-index="{{index}}" bindtap = "delItem" class="inner del">
+                  <text>删除</text> 
+                </view>
+              </view>
+          </block> 
+      </view>
+      <!-- 空的显示内容 -->
+      <view class='center ss-kong' wx:else> 
+          <image src='../../assets/classKong.png'></image>
+          <text class='fs14 threec block'>赶紧去收藏吧!~</text>
+      </view>
+    </view>
+
+    <!-- 04车贷列表 -->
+    <view class="{{currentTab==3 ? '' : 'hidden'}}">
+      <view wx:if='{{pageList04.length>0}}'>
+          <block wx:for='{{pageList04}}'  wx:key='index'>
+              <view class='item'>
+                <view class='relative txt' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}"  >
+                  <template is='resourceList' data='{{...item}}' />
+                  
+                </view>  
+                <view data-index="{{index}}" bindtap = "delItem" class="inner del">
+                  <text>删除</text> 
+                </view>
+              </view>
+          </block> 
+      </view>
+      <!-- 空的显示内容 -->
+      <view class='center ss-kong' wx:else> 
+          <image src='../../assets/classKong.png'></image>
+          <text class='fs14 threec block'>赶紧去收藏吧!~</text>
+      </view>
+    </view>
+
+    <!-- 05企业贷列表 -->
+    <view class="{{currentTab==4 ? '' : 'hidden'}}">
+      <view wx:if='{{pageList05.length>0}}'>
+          <block wx:for='{{pageList05}}'  wx:key='index'>
+              <view class='item'>
+                <view class='relative txt' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}"  >
+                  <template is='resourceList' data='{{...item}}' />
+                  
+                </view>  
+                <view data-index="{{index}}" bindtap = "delItem" class="inner del">
+                  <text>删除</text> 
+                </view>
+              </view>
+          </block> 
+      </view>
+      <!-- 空的显示内容 -->
+      <view class='center ss-kong' wx:else> 
+          <image src='../../assets/classKong.png'></image>
+          <text class='fs14 threec block'>赶紧去收藏吧!~</text>
+      </view>
+    </view>
+  
+</view>
+ 

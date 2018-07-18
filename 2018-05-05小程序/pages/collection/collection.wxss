@@ -1,0 +1,11 @@
+/* pages/collection/collection.wxss */
+@import "../../tpl/resourceList/resourceList.wxss";
+
+/* 侧滑菜单 */
+.ss-main-list-item {z-index: 2}
+.item{position: relative; border-top: 2rpx solid #eee;   overflow: hidden;}
+.item:last-child{border-bottom: 2rpx solid #eee;}
+.inner{position: absolute;z-index: 3} 
+.inner.del{background-color: #e64340; width: 180rpx; text-align: center; z-index: 1; right: 0;top:0; color: #fff;height: 100%;}
+.inner.del text{position: absolute; transform: translate(-50%,-50%); top: 50%;left: 50%;}
+.thumb{width: 200px; height: 200px; -webkit-overflow-scrolling: touch; overflow: scroll;} 
